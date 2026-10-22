@@ -24,8 +24,6 @@ La aplicación permite:
 
 ## 🖼️ Capturas de Pantalla
 
-*(Nota: Reemplaza o agrega aquí tus propias imágenes de la aplicación)*
-
 ### 1. Vista de Inicio (Home)
 ![Vista de Inicio]<img width="1519" height="726" alt="image" src="https://github.com/user-attachments/assets/1f0fc3cb-e37e-41a2-b4b6-5f286070f087" />
 
@@ -50,3 +48,20 @@ Asegúrate de tener instalado [Node.js](https://nodejs.org/) en tu equipo.
 1. **Clonar o descargar el repositorio:**
    ```bash
    git clone [https://github.com/JhonatanYepes/proyecto-harry-potter.git](https://github.com/JhonatanYepes/proyecto-harry-potter.git)
+
+Ingresar a la carpeta del proyecto:
+
+1. Bash
+cd proyecto-harry-potter
+Instalar las dependencias del proyecto:
+
+2. Bash
+npm install
+Iniciar el servidor de desarrollo local:
+
+3. Bash
+npm run dev
+Abre la dirección proporcionada por la consola (generalmente http://localhost:5173/) en tu navegador web.
+
+👥 Nombres de los Integrantes
+Jhonatan David Yepes Luna & Jhon Fredy Peréz Castro
