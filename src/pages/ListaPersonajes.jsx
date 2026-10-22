@@ -65,7 +65,7 @@ export default function ListaPersonajes() {
   if (error) return <p style={{ color: 'red', textAlign: 'center', padding: '50px' }}>Error: {error}</p>;
 
   return (
-    <div style={{ padding: '20px', maxWidth: '1200px', margin: '0 auto' }}>
+    <div style={{ padding: '20px', maxWidth: '1200px', margin: '0 auto', lineHeight: '1' }}>
       <h1 style={{ textAlign: 'center' }}>Catálogo de Personajes de Harry Potter</h1>
       
       {/* Sección de los 2 Buscadores */}
