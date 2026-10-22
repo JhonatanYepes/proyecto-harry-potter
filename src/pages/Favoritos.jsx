@@ -17,7 +17,7 @@ export default function Favoritos() {
   };
 
   return (
-    <div style={{ padding: '20px' }}>
+    <div style={{ padding: '20px', lineHeight: '1' }}>
       <h1>Mis Personajes Favoritos ❤️</h1>
       
       {favoritos.length === 0 ? (

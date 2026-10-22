@@ -47,8 +47,8 @@ export default function ListaPersonajes() {
   if (error) return <p style={{ color: 'red', textAlign: 'center', padding: '50px' }}>Error: {error}</p>;
 
   return (
-    <div style={{ padding: '20px' }}>
-      <h1 style={{ textAlign: 'center' }}>Catálogo de Personajes de Harry Potter</h1>
+    <div style={{ padding: '20px', lineHeight: '1.6' }}>
+      <h1 style={{ textAlign: 'center', lineHeight: '1.2' }}>Catálogo de Personajes de Harry Potter</h1>
       <p style={{ textAlign: 'center' }}>Total de personajes encontrados: {personajes.length}</p>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '20px', marginTop: '20px' }}>
