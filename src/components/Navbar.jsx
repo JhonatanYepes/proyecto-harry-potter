@@ -5,12 +5,11 @@ export default function Navbar() {
   const [menuAbierto, setMenuAbierto] = useState(false);
   const [esMovil, setEsMovil] = useState(window.innerWidth <= 768);
 
-  // Detectar cambios en el tamaño de la pantalla en tiempo real
   useEffect(() => {
     const manejarResize = () => {
       setEsMovil(window.innerWidth <= 768);
       if (window.innerWidth > 768) {
-        setMenuAbierto(false); // Cierra el menú móvil si pasa a PC
+        setMenuAbierto(false);
       }
     };
 
@@ -28,18 +27,21 @@ export default function Navbar() {
 
   return (
     <nav style={{ 
+      position: 'fixed',    /* Hace que el Navbar se quede fijo al hacer scroll */
+      top: 0,               /* Lo pega a la parte superior */
+      left: 0,              /* Lo extiende al borde izquierdo */
+      right: 0,             /* Lo extiende al borde derecho */
+      zIndex: 1000,         /* Asegura que siempre quede por encima de las imágenes y tarjetas */
       display: 'flex', 
       justifyContent: 'space-between', 
       alignItems: 'center', 
       padding: '15px 30px', 
       background: '#1a1a1a', 
       color: 'white',
-      position: 'relative',
       flexWrap: 'wrap'
     }}>
       <h2 style={{ margin: 0, fontSize: '1.4rem' }}>⚡ HarryPotter App</h2>
 
-      {/* Botón de Hamburguesa: Se muestra ÚNICAMENTE si es dispositivo móvil */}
       {esMovil && (
         <button 
           onClick={() => setMenuAbierto(!menuAbierto)}
@@ -56,7 +58,6 @@ export default function Navbar() {
         </button>
       )}
 
-      {/* Contenedor de enlaces: En PC se muestra horizontal (flex), en móvil se oculta o despliega */}
       <div style={{ 
         display: esMovil ? (menuAbierto ? 'flex' : 'none') : 'flex', 
         flexDirection: esMovil ? 'column' : 'row', 
