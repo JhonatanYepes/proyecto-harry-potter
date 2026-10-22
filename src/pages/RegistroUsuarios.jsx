@@ -90,7 +90,7 @@ export default function RegistroUsuarios() {
   };
 
   return (
-    <div style={{ maxWidth: '600px', margin: '0 auto', padding: '20px' }}>
+    <div style={{ maxWidth: '600px', margin: '0 auto', padding: '20px', lineHeight: '1' }}>
       <h1>Registro de Usuarios</h1>
       <p>Total de usuarios registrados: <strong>{usuarios.length}</strong></p>
 

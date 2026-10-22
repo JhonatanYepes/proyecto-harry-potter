@@ -12,7 +12,8 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <div style={{ minHeight: '80vh', padding: '20px' }}>
+  
+      <div style={{ minHeight: '80vh', padding: '20px', paddingTop: '50px' }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/lista" element={<ListaPersonajes />} />
@@ -22,6 +23,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
+
       <Footer />
     </BrowserRouter>
   );
