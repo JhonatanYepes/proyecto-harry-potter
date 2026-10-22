@@ -47,21 +47,23 @@ Asegúrate de tener instalado [Node.js](https://nodejs.org/) en tu equipo.
 
 1. **Clonar o descargar el repositorio:**
    ```bash
-   git clone [https://github.com/JhonatanYepes/proyecto-harry-potter.git](https://github.com/JhonatanYepes/proyecto-harry-potter.git)
-
-Ingresar a la carpeta del proyecto:
-
-1. Bash
+   git clone [https://github.com/JhonatanYepes/proyecto-harry-potter](https://github.com/JhonatanYepes/proyecto-harry-potter.git)
+   
+---
+1. Ingresar a la carpeta del proyecto:
+   
 cd proyecto-harry-potter
-Instalar las dependencias del proyecto:
 
-2. Bash
+2. Instalar las dependencias del proyecto:
+   
 npm install
-Iniciar el servidor de desarrollo local:
 
-3. Bash
+3. Iniciar el servidor de desarrollo local:
+
 npm run dev
-Abre la dirección proporcionada por la consola (generalmente http://localhost:5173/) en tu navegador web.
 
-👥 Nombres de los Integrantes
+4. Abre la dirección proporcionada por la consola (generalmente http://localhost:5173/) en tu navegador web.
+
+Nombres de los Integrantes:
+
 Jhonatan David Yepes Luna & Jhon Fredy Peréz Castro
